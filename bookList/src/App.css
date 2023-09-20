@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: rgb(0, 0, 0);
+  color: #fff;
+}
+
+h1 {
+  display: block;
+  margin: 4rem auto;
+  text-align: center;
+  text-transform: capitalize;
+  background: rgba(220, 220, 220, 0.151);
+  max-width: 30%;
+  padding: 0.4rem;
+  box-sizing: border-box;
+  border-top-left-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+}
+
+.bookList {
+  width: 90%;
+  max-width: 1170px;
+  margin: 5rem auto;
+  display: grid;
+  gap: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .bookList {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
